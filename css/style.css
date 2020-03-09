@@ -18,7 +18,16 @@
 .img-logo {
 	width: 166px;
 	height: 51px;
-	margin-left: 42.72px;
+	margin-left: 43px;
+}
+.menu-model__item_active {
+    font-weight: 600;
+	font-size: 15px;
+	line-height: 18px;
+    color: #FF0000;
+    border-bottom: 2px solid #FF0000;
+    padding: 0px 0px 6px 0px;
+    border-radius: 8%;
 }
 .menu-model__item {
 	font-weight: 600;
@@ -74,11 +83,19 @@
     cursor: pointer;
     margin-left: 30px;
 }
+.img__burger-menu {
+		width: 24px;
+		height: 15px;
+}
 .section-second  {
 	max-width: 1440px;
 	max-height: 900px;
 	margin: 0 auto;
+	position: relative;
 	background: url(../img/Tesla-Wordmark-Red.png) no-repeat;
+     background-size: contain;
+     background-position: 20% 0%;
+     margin-bottom: 18px;
 }
 .section-second__title {
 	text-align: center;
@@ -86,7 +103,7 @@
 	font-size: 90px;
 	line-height: 110px;
 	margin-top: 60px; 
-	margin-bottom: -10px;
+	max-height: 99px;
 }
 .section-second__subtitle {
 	text-align: center;
@@ -99,18 +116,17 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 968px;
-	height: 450px;
+    max-width: 968px;
+	max-height: 450px;
 	margin: 26px 200px;
 }
 .description__car {
 	display: flex;
     justify-content: space-evenly;
     margin-bottom: 82px;
-    width: 976px;
+    max-width: 976px;
     margin: 0px auto;
     padding-bottom: 23px;
-
 }
 .description__car-item-first {
 	display: flex;
@@ -123,8 +139,8 @@
 .speed-icon {
 	width: 54px;
 }
-.speed-value__wrap {
-
+.speed-icon-ipad {
+	display: none;
 }
 .speed-value {
 	font-weight: 600;
@@ -145,6 +161,9 @@
 	display: flex;
 	padding-right: 40px;
 }
+.road-icon-ipad {
+	display: none;
+}
 .road-icon__wrap {
 	margin: 10px;
     margin-bottom: 0;
@@ -152,7 +171,6 @@
 .road-icon {
 	width: 39px;
 }
-.power-reserve__wrap {}
 .power-reserve-value {
 	font-weight: 600;
 	font-size: 35px;
@@ -173,7 +191,6 @@
     align-items: center;
     margin-bottom: 10px;
 }
-
 .testdrive__wrap {
 	display: flex;
     align-items: center;
@@ -182,6 +199,9 @@
 .steering-wheel {
 	padding-right: 6px;
 }
+.steering-wheel-red {
+	display: none;
+}
 .testdrive {
 	font-weight: bold;
 	font-size: 13px;
@@ -189,13 +209,11 @@
 	text-align: center;
 	text-transform: uppercase;
 	text-shadow: 0px 3px 6px #000;
-
 }
 .testdrive-order__btn {
 	display: flex;
     align-items: center;
     padding-right: 25px;
-
 }
 .order__btn {
 	width: 160px;
@@ -213,4 +231,393 @@
 .down-arrow {
 	display: flex;
     justify-content: center;
+}
+@media screen and (max-width: 1439px) {
+	.car-model-s {
+		max-width: 920px;
+      	max-height: 430px;
+		margin: 0 auto;
+		padding-bottom: 40px;
+	}
+}
+@media screen and (max-width: 1080px) {
+  .menu {
+    display: none;
+  }
+  .side-menu__item{
+    display: none;
+  }
+  .car-model-s{
+  	max-width: 761px;
+    max-height: 396px;
+    top: 267px;
+  }
+  .description__car {
+    width: 100%;
+  }
+  .section-second {
+    background-position: 35px 20px;
+    }
+}
+@media screen and (max-width: 950px){
+	.section-second {
+    	background-position: 0% 11%;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+	.header {
+    	display: flex;
+    	justify-content: space-between ;
+    	align-items: center;
+    	padding-top: 24px;
+    	max-width: 768px;
+    	margin: 0 auto;
+	}
+	.img-logo {
+		max-width: 166px;
+		max-height: 51px;
+		margin-left: 15px;
+	}
+	.burger-menu {
+    	border: none;
+   	 	background-color: #ffffff;
+    	cursor: pointer;
+	}
+	.img__burger-menu {
+		position: relative;
+		width: 35px;
+		height: 22px;
+		left: 27px;
+	}
+	.section-second  {
+		background: url(../img/Tesla-Wordmark-Red.png) no-repeat;
+     	 background-size: 110% 32%;
+     	 background-position: 20% 17%;
+     	 margin-bottom: 18px;
+	}
+	.section-second__title {
+		margin-top: 80px; 
+	}
+	.car-model-s {
+    	display: flex;
+    	justify-content: center;
+    	align-items: flex-start;
+    	width: 92%;
+   		height: 100%;
+		margin: 0 auto;
+		margin-top: 84px;
+	}
+	.description__car {
+    	flex-wrap: wrap;
+		max-width: 600px;
+    	margin: 0px auto;
+    	padding-bottom: 52px;
+	}
+	.description__car-item-first {
+		display: flex;
+		max-width: 220px;
+		max-height: 75px;
+		padding-left: 0px;
+		padding-right: 40px;
+		padding-bottom: 60px;
+	}
+	.speed-icon__wrap {
+		margin: 15px; 
+		max-width: 67px;
+	}
+	.speed-icon {
+		display: none;
+	}
+	.speed-icon-ipad {
+		display: block;
+		max-width: 65px;
+		max-height: 50px;
+		margin-right: 5px;
+	}
+	.speed-value {
+		font-weight: 600;
+		font-size: 50px;
+		line-height: 61px;
+	}
+	.speed-value-1 {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.speed-value-2 {
+		text-align:top;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 15px;
+	}
+	.description__car-item-second {
+		display: flex;
+		max-width: 201px;
+		max-height: 83px;
+		padding-right: 30px;
+	}
+	.road-icon__wrap {
+		margin: 0px;
+		margin-top: 11px;
+		margin-right: 15px;
+	}
+	.road-icon {
+		display: none;
+	}
+	.road-icon-ipad {
+		display: block;
+		max-width: 42px;
+	}
+	.power-reserve-value {
+		font-weight: 600;
+		font-size: 50px;
+		line-height: 61px;
+	}
+	.power-reserve-value-1 {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.power-reserve-value-2 {
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 15px;
+	}
+	.testdrive-order {
+		display: flex;
+   		align-items: center;
+    	margin-bottom: 10px;
+	}
+	.testdrive__wrap {
+		display: flex;
+   		align-items: center;
+   		margin-right: 40px;
+	}
+	.steering-wheel{
+		display: none;
+	}
+	.steering-wheel-red {
+		display: block;
+		padding-right: 15px;
+		padding-top: 2px;
+	}
+	.testdrive {
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+		color: #E51937;
+		text-shadow: none;
+		padding-top: 4px;
+	}
+	.testdrive-order__btn {
+		display: flex;
+    	align-items: center;
+    	padding-right: 0px;
+	}
+	.order__btn {
+ 		width: 220px;
+    	height: 55px;
+    	color: #ffffff;
+    	background-color: #E51937;
+    	font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.down-arrow {
+		display: flex;
+    	justify-content: center;
+	}
+}
+@media screen and (max-width: 700px) {
+	.section-second  {
+		background: url(../img/Tesla-Wordmark-Red.png) no-repeat;
+     	 background-size: 110% 32%;
+     	 background-position: 20% 25%;
+     	 margin-bottom: 18px;
+	}
+@media screen and (max-width: 460px) {
+	.header {
+    	display: flex;
+    	justify-content: space-between ;
+    	align-items: center;
+    	padding-top: 5px;
+    	max-width: 375px;
+    	margin: 0 auto;
+	}
+	.img-logo {
+		max-width: 138px;
+		max-height: 42px;
+		margin-left: 0px;
+	}
+
+	.burger-menu {
+    	border: none;
+    	background-color: #ffffff;
+    	cursor: pointer;
+	}
+	.img__burger-menu {
+		position: relative;
+		width: 24px;
+		height: 15px;
+		left: 40px;
+	}
+	.section-second  {
+		background: url(../img/Tesla-Wordmark-Red.png) no-repeat;
+     		background-size: 115% 28%;
+     		background-position: 35% 23%;
+     		margin-bottom: 18px;
+	}
+	.section-second__title {
+		font-weight: 600;
+		font-size: 50px;
+		line-height: 61px;
+		margin-top: 29px; 
+	}
+	.section-second__subtitle {
+		font-weight: 500;
+		font-size: 10px;
+		line-height: 12px;
+	}
+	.car-model-s {
+    	display: flex;
+    	justify-content: center;
+    	align-items: flex-start;
+    	width: 95%;
+   		height: 100%;
+		margin: 0 auto;
+		margin-top: 49px;
+		padding-bottom: 28px;
+	}
+	.description__car {
+    	flex-wrap: wrap;
+		max-width: 600px;
+    	margin: 0px auto;
+    	padding-bottom: 31px;
+	}
+	.description__car-item-first {
+		display: flex;
+		max-width: 133px;
+		max-height: 53px;
+		padding-left: 13px;
+		padding-right: 27px;
+		padding-bottom: 40px;
+	}
+	.speed-icon__wrap {
+		margin: 9px; 
+		margin-right: 15px;
+		max-width: 38px;
+	}
+	.speed-icon{
+		display: none;
+	}
+	.speed-icon-ipad {
+		display: block;
+		max-width: 38px;
+		max-height: 29px;
+		margin-right: 5px;
+	}
+	.speed-value {
+		font-size: 27px;
+		line-height: 33px;
+	}
+	.speed-value-1 {
+		font-size: 15px;
+		line-height: 18px;
+	}
+	.speed-value-2 {
+		font-weight: normal;
+		font-size: 10px;
+		line-height: 12px;
+	}
+	.description__car-item-second {
+		display: flex;
+		max-width: 115px;
+		max-height: 53px;
+		padding-right: 35px;
+	}
+	.road-icon__wrap {
+		margin: 0px;
+		margin-top: 1px;
+		margin-right: 15px;
+	}
+	.road-icon {
+		display: none;
+	}
+	.road-icon-ipad {
+		display: block;
+		max-width: 26px;
+	}
+	.power-reserve-value {
+		font-weight: 600;
+		font-size: 27px;
+		line-height: 33px;
+	}
+	.power-reserve-value-1 {
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 18px;
+	}
+	.power-reserve-value-2 {
+		font-weight: normal;
+		font-size: 10px;
+		line-height: 10px;
+	}
+	.testdrive-order {
+		display: flex;
+   		align-items: center;
+    	margin-bottom: 0px;
+	}
+	.testdrive__wrap {
+		display: flex;
+   		align-items: center;
+   		margin-right: 27px;
+	}
+	.steering-wheel{
+		display: none;
+	}
+	.steering-wheel-red {
+		display: block;
+		width: 22px;
+		height: 22px;
+		padding-right: 7px;
+		padding-top: 2px;
+	}
+	.testdrive {
+		font-weight: bold;
+		font-size: 13px;
+		line-height: 16px;
+		color: #E51937;
+		text-shadow: none;
+		padding-top: 4px;
+	}
+	.testdrive-order__btn {
+		display: flex;
+    	align-items: center;
+    	padding-right: 0px;
+	}
+	.order__btn {
+ 		width: 160px;
+    	height: 40px;
+    	color: #ffffff;
+    	background-color: #E51937;
+    	font-weight: bold;
+		font-size: 13px;
+		line-height: 16px;
+	}
+	.down-arrow {
+		display: flex;
+    	justify-content: center;
+	}
+}
+@media screen and (max-width: 375px){
+	.section-second  {
+		background: url(../img/Tesla-Wordmark-Red.png) no-repeat;
+     		background-size: 115% 28%;
+     		background-position: 35% 23%;
+     		margin-bottom: 18px;
+	}
+	.car-model-s {
+    padding-bottom: 23px;
+}
 }
