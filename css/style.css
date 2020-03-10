@@ -95,7 +95,7 @@
 	background: url(../img/Tesla-Wordmark-Red.png) no-repeat;
      background-size: contain;
      background-position: 20% 0%;
-     margin-bottom: 18px;
+     margin-bottom: 35px;
 }
 .section-second__title {
 	text-align: center;
@@ -232,6 +232,327 @@
 	display: flex;
     justify-content: center;
 }
+/* Начало стилей второй секции*/
+.section-third {
+	display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background: url(../img/2013-tesla-model-s-cockpit.png) no-repeat;
+	background-size: 88% 94%;
+    background-position: 0% 100%;
+    max-height: 900px;
+    max-width: 1440px;
+}
+.section-third__wrap {
+	display: flex;
+}
+.section-third__title {
+	font-weight: 600;
+	font-size: 70px;
+	line-height: 85px;
+	color: #E51937;
+	margin-top: 65px;
+    margin-left: 80px;
+}
+.redblock-right {
+	display: flex;
+	flex-direction: column;
+    background: #E51937;
+    color: #ffffff;
+    padding-left: 52px;
+    padding-right: 72px;
+    padding-top: 51px;
+ 	max-width: 317px;
+	max-height: 848px;
+}
+.redblock-right__title {
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 37px;
+	margin-bottom: 12px;
+}
+.redblock-right__text {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;}
+.redblock-right__wrap {
+	margin-top: 60px;
+	margin-bottom: 62px;
+}
+.sreenblock {
+	display: flex;
+    justify-content: flex-start;
+}
+.sreenblock__img {}
+.img-screen {
+	width: 36px;
+	height: 53px;
+	margin-top: 12px;
+    margin-right: 20px;
+}
+.sreenblock-description {}
+.sreenblock-description__title {
+	font-weight: 600;
+	font-size: 35px;
+	line-height: 43px;
+}
+.sreenblock-description__subtitle {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+}
+.sreenblock-description__text {
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+}
+.wifiblock {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 33px;
+}
+.wifiblock__img {}
+.img-wifi {
+	width: 42px;
+	height: 34px;
+	margin-top: 15px;
+    margin-right: 19px;
+}
+.wifiblock-description {}
+.wifiblock-description__title {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 18px;
+}
+.wifiblock-description__text {
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+}
+.bagblock {
+	display: flex;
+    justify-content: flex-start;
+    margin-top: 23px;
+}
+.bagblock-img {}
+.bag-img {
+	width: 36px;
+	height: 52px;
+	margin-top: 15px;
+    margin-right: 25px;
+}
+.bagblock-description__title {
+	font-weight: 600;
+	font-size: 35px;
+	line-height: 43px;
+}
+.bagblock-description__subtitle {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+}
+.bagblock-description__text {
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+}
+.redblock-__order {
+	display: flex;
+    align-items: center;
+	margin-top: 170px;
+	width: 347px;
+	height: 40px;
+}
+.redblock__information {
+	display: flex;
+	align-items: center;
+	width: 165px;
+	height: 27px;
+}
+.redblock__information a {
+ 	text-decoration: none;
+ }
+.redblock__information-link {
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+}
+.info-icon__wrap {
+}
+.info-icon {
+	width: 22px;
+	height: 22px;
+	margin-right: 6px;
+    margin-top: 2px;
+}
+.redblock_order__btn {
+	margin-left: 20px;
+}
+.redblock__btn {
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 160px;
+    height: 40px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #E51937;
+    cursor: pointer;
+}
+/* Конец стилей второй секции*/
+/* Начало стилей третьей секции*/
+.section-fourth {
+	display: flex;
+}
+.redblock-left {
+	display: flex;
+	flex-direction: column;
+    color: #ffffff;
+    padding-left: 56px;
+    padding-right: 66px;
+    padding-top: 51px;
+ 	max-width: 317px;
+	max-height: 850px;
+	color: #fff;
+    background-color: #E51937;
+}
+.redblock-left__title {
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 37px;
+	margin-top: 2px;
+}
+.redblock-left__text {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+	margin-top: 13px;
+}
+.protection-rating__title {
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 37px;
+	margin-top: 55px;
+	margin-bottom: 20px;
+}
+.redblock__rating-stars {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 7px;
+    max-width: 292px;
+
+}
+.redblock-rating__text {
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 21px;
+	text-transform: uppercase;
+	margin-top: 5px;
+}
+.redblock-rating__text-sub {
+	font-weight: normal;
+    font-size: 9px;
+    line-height: 6px;
+    text-transform: uppercase;
+}
+.star-img {
+	width: 25px;
+	height: 25px;
+}
+.redblock__safety-rating {
+ 	margin-top: 100px;
+}
+.security-shield {
+	width: 62px;
+	height: 74px;
+	float: left; 
+    margin: 10px 23px 10px 10px;
+
+}
+.security-shield__title-first {
+	font-weight: 600;
+	font-size: 50px;
+	line-height: 61px;
+}
+.security-shield__title-second {
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 13px;
+}
+.redblock-left__order {
+	display: flex;
+    align-items: center;
+	margin-top: 49px;
+	margin-bottom: 60px;
+	width: 347px;
+	height: 40px;
+}
+.redblock-left__information {
+	display:inline-flex;;
+	align-items: center;
+	width: 165px;
+	height: 27px;
+}
+.redblock-left__information a {
+ 	text-decoration: none;
+ }
+.redblock-left__information-link {
+	display: inline;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+}
+.info-icon__wrap {
+}
+.info-icon {
+	width: 22px;
+	height: 22px;
+	margin-right: 6px;
+    margin-top: 2px;
+}
+.redblock-left_order__btn {
+	margin-left: 4px;
+}
+.redblock-left__btn {
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 160px;
+    height: 40px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #E51937;
+    cursor: pointer;
+}
+.section-fourth__wrap {
+	display: flex;
+    max-width: 1002px;
+    max-height: 900px;
+    background: url(../img/Model-S.png) no-repeat;
+		background-size: 79% 17%;
+    	background-position: 100% 19%;
+}
+.img-car-frame {
+	max-width: 1049px;
+	max-height: 593px;
+    position: relative;
+    top: 172px;
+    right: 95px;
+}
+
+/* Конец стилей третьей секции*/
 @media screen and (max-width: 1439px) {
 	.car-model-s {
 		max-width: 920px;
