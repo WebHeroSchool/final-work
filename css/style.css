@@ -236,15 +236,16 @@
 .section-third {
 	display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
-    background: url(../img/2013-tesla-model-s-cockpit.png) no-repeat;
-	background-size: 88% 94%;
-    background-position: 0% 100%;
     max-height: 900px;
     max-width: 1440px;
 }
 .section-third__wrap {
 	display: flex;
+    background: url(../img/2013-tesla-model-s-cockpit.png) no-repeat;
+    background-size: 128% 94%;
+    background-position: 0% 100%;
+    height: 899px;
+    width: 1440px;
 }
 .section-third__title {
 	font-weight: 600;
@@ -359,7 +360,7 @@
 .redblock-__order {
 	display: flex;
     align-items: center;
-	margin-top: 170px;
+	margin-top: 107px;
 	width: 347px;
 	height: 40px;
 }
@@ -409,6 +410,8 @@
 /* Начало стилей третьей секции*/
 .section-fourth {
 	display: flex;
+	max-width: 1440px;
+    max-height: 900px;
 }
 .redblock-left {
 	display: flex;
@@ -538,21 +541,21 @@
 }
 .section-fourth__wrap {
 	display: flex;
-    max-width: 1002px;
-    max-height: 900px;
+    width: 1002px;
+    height: 900px;
     background: url(../img/Model-S.png) no-repeat;
 		background-size: 79% 17%;
     	background-position: 100% 19%;
 }
 .img-car-frame {
-	max-width: 1049px;
-	max-height: 593px;
+	width: 105%;
+    max-height: 593px;
     position: relative;
     top: 172px;
     right: 95px;
 }
-
 /* Конец стилей третьей секции*/
+
 @media screen and (max-width: 1439px) {
 	.car-model-s {
 		max-width: 920px;
@@ -560,6 +563,14 @@
 		margin: 0 auto;
 		padding-bottom: 40px;
 	}
+}
+@media screen and (max-width: 1200px) {
+	.section-third__wrap {
+		display: flex;
+    	background: url(../img/2013-tesla-model-s-cockpit.png) no-repeat;
+    	background-size: 150% 74%;
+    	background-position: 0% 100%;
+    }
 }
 @media screen and (max-width: 1080px) {
   .menu {
@@ -579,11 +590,101 @@
   .section-second {
     background-position: 35px 20px;
     }
+    .section-third__wrap {
+	display: flex;
+    background: url(../img/2013-tesla-model-s-cockpit.png) no-repeat;
+    background-size: 160% 70%;
+    background-position: 0% 100%;
+	
 }
 @media screen and (max-width: 950px){
 	.section-second {
     	background-position: 0% 11%;
     }
+    	.section-third {
+    	display: flex;
+    	flex-direction: column;
+    	max-height: 100%;
+    	max-width: 950px;
+    }	
+	.section-third__wrap {
+		display: flex;
+    	justify-content: flex-end;
+    	background: url(../img/2013-tesla-model-s-cockpitIPAD.png) no-repeat;
+		background-size: 106% 101%;
+    	background-position: 0px 61px;
+    	width: 100%;
+    	height: 560px;
+    }
+	.section-third__title {
+    	margin-top: 71px;
+    	margin-right: 46px;
+	}
+	.redblock-right {
+		display: flex;
+		flex-flow: column wrap;
+    	max-width: 950px; 
+    	max-height: 487px;
+    	padding-left: 33px;
+    	padding-right: 58px;
+    	padding-top: 59px;
+	}
+	.redblock-right__title {
+		width: 62%;
+		margin-bottom: 20px;
+	}
+	.redblock-right__text {
+		width: 50%;
+	}
+	.redblock-right__wrap{
+		margin-top: 0px;
+		width: 38%; 
+	}
+	.wifiblock {
+		margin-top: 18px;
+	}
+	.bagblock {
+		margin-top: 18px;
+	}
+	.redblock-__order {
+		margin-top: 21px;
+    	margin-bottom: 59px;
+    	margin-left: -385px;
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	width: auto;
+	}
+	.redblock__information {
+		width: 220px;
+	}
+	.info-icon {
+		width: 31px;
+		height: 31px;
+	}
+	.redblock__information-link {
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+	.redblock_order__btn {
+		margin-left: 15px;
+	}
+	.redblock__btn {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	width: 221px;
+	height: 55px;
+	border: 3px solid #FFFFFF;
+	box-sizing: border-box;
+	}
 }
 
 @media screen and (max-width: 768px) { 
@@ -615,11 +716,14 @@
 		background: url(../img/Tesla-Wordmark-Red.png) no-repeat;
      	 background-size: 110% 32%;
      	 background-position: 20% 17%;
-     	 margin-bottom: 18px;
+     	 margin-bottom: 0px;
 	}
 	.section-second__title {
 		margin-top: 80px; 
 	}
+	.section-second__subtitle {
+    	margin-top: 2px;
+  	}
 	.car-model-s {
     	display: flex;
     	justify-content: center;
@@ -627,7 +731,7 @@
     	width: 92%;
    		height: 100%;
 		margin: 0 auto;
-		margin-top: 84px;
+		margin-top: 85px;
 	}
 	.description__car {
     	flex-wrap: wrap;
@@ -667,7 +771,6 @@
 		line-height: 24px;
 	}
 	.speed-value-2 {
-		text-align:top;
 		font-weight: normal;
 		font-size: 12px;
 		line-height: 15px;
@@ -749,6 +852,112 @@
 		display: flex;
     	justify-content: center;
 	}
+									/*начало 2 секции*/
+	.section-third {
+    	display: flex;
+    	flex-direction: column;
+    	max-height: 100%;
+    	max-width: 768px;
+    }	
+	.section-third__wrap {
+		display: flex;
+    	justify-content: flex-end;
+    	background: url(../img/2013-tesla-model-s-cockpitIPAD.png) no-repeat;
+		background-size: 100% 90%;
+    	background-position: 0px 61px;
+    	width: 100%;
+    	height: 560px;
+    }
+	.section-third__title {
+    	margin-top: 71px;
+    	margin-right: 46px;
+	}
+	.redblock-right {
+		display: flex;
+		flex-flow: column wrap;
+    	max-width: 768px; 
+    	max-height: 487px;
+    	padding-left: 33px;
+    	padding-right: 58px;
+    	padding-top: 59px;
+	}
+	.redblock-right__title {
+		width: 62%;
+		margin-bottom: 20px;
+	}
+	.redblock-right__text {
+		width: 50%;
+	}
+	.redblock-right__wrap{
+		margin-top: 0px;
+		width: 38%; 
+	}
+	.wifiblock {
+		margin-top: 18px;
+	}
+	.bagblock {
+		margin-top: 18px;
+	}
+	.redblock-__order {
+		margin-top: 21px;
+    	margin-bottom: 59px;
+    	margin-left: -385px;
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	width: auto;
+	}
+	.redblock__information {
+		width: 220px;
+	}
+	.info-icon {
+		width: 31px;
+		height: 31px;
+	}
+	.redblock__information-link {
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+	.redblock_order__btn {
+		margin-left: 15px;
+	}
+	.redblock__btn {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	width: 221px;
+	height: 55px;
+	border: 3px solid #FFFFFF;
+	box-sizing: border-box;
+	}
+
+	.section-fourth {}
+	.redblock-left {}
+	.redblock-left__title {}
+	.redblock-left__text {}
+	.protection-rating__title {}
+	.redblock__rating-stars {}
+	.redblock-rating__text {}
+	.stars_group {}
+	.star-img {}
+	.redblock-rating__text-sub {}
+	.redblock__safety-rating {}
+	.security-shield {}
+	.security-shield__title-first {}
+	.security-shield__title-second {}
+	.redblock-left__order {}
+	.redblock-left__information {}
+	.redblock-left__information-link {}
+	.redblock-left_order__btn {}
+	.section-fourth__wrap {}
+	.img-car-frame {}
 }
 @media screen and (max-width: 700px) {
 	.section-second  {
